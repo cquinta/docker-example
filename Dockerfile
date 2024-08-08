@@ -10,4 +10,7 @@ RUN pip install "fastapi[standard]"
 
 COPY ./app /code/app
 
-CMD ["fastapi", "run", "app/main.py", "--port", "80"]
+EXPOSE port 80
+
+ENTRYPOINT [ "fastapi" ]
+CMD [ "run", "app/main.py", "--port", "80"]
