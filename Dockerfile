@@ -13,4 +13,4 @@ COPY ./app /code/app
 ENTRYPOINT [ "fastapi" ]
 CMD [ "run", "app/main.py", "--port", "80"]
 
-EXPOSE port 80
+EXPOSE 80
